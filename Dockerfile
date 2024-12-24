@@ -15,4 +15,4 @@ USER 1013690000
 
 COPY . . 
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
