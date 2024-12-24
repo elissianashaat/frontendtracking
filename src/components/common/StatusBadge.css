@@ -1,0 +1,17 @@
+.status-badge.delivered {
+    background-color: green;
+    color: white;
+  }
+  .status-badge.pending {
+    background-color: orange;
+    color: white;
+  }
+  .status-badge.in-transit {
+    background-color: blue;
+    color: white;
+  }
+  .status-badge.unknown {
+    background-color: gray;
+    color: white;
+  }
+  
