@@ -1,0 +1,110 @@
+/* Container for the Assigned Orders */
+.assigned-orders-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  .assigned-orders-header {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Order Card Styling */
+  .order-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .order-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .order-card h3 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .order-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  /* Status Indicator Styling */
+  .order-status-indicator {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .order-status-indicator[data-status="pending"] {
+    background-color: orange;
+  }
+  
+  .order-status-indicator[data-status="in transit"] {
+    background-color: #3498db;
+  }
+  
+  .order-status-indicator[data-status="delivered"] {
+    background-color: #2ecc71;
+  }
+  
+  .order-status-indicator[data-status="unknown"] {
+    background-color: #95a5a6;
+  }
+  
+  /* Button Styling */
+  .button-container {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .accept-button, .decline-button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+  }
+  
+  .accept-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .decline-button {
+    background-color: #E74C3C;
+    color: white;
+  }
+  
+  .accept-button:hover, .decline-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .accept-button:active, .decline-button:active {
+    transform: translateY(0);
+  }
+  
+  
